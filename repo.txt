@@ -1,7 +1,7 @@
 Sistema IoT Casa Inteligente - ESP32 + MQTT
 ============================================
 
-Repositório: https://github.com/usuario/casa-iot-esp32
+Repositório: https://github.com/edueevaristo/mqtt_casa_inteligente
 
 Descrição:
 Sistema completo de automação residencial usando ESP32, WiFi e MQTT.
@@ -9,7 +9,7 @@ Controla luzes e ar condicionado baseado em sensores de luminosidade e temperatu
 
 Funcionalidades:
 - Conecta à rede WiFi "iot" (senha: 123mudar)
-- Conecta ao broker MQTT em 192.168.0.1:1883
+- Conecta ao broker MQTT em 192.168.137.1:1883
 - Simula sensor de luminosidade (0-10) publicando em casa/externo/luminosidade
 - Simula sensor de temperatura (-3 a 45°C) publicando em casa/externo/temperatura
 - Controla luzes (GPIO 18) baseado na luminosidade recebida
@@ -20,10 +20,10 @@ Lógica de Controle:
 - AR: LIGA se temperatura > 23°C, DESLIGA após 10 minutos com temperatura < 20°C
 
 Compilação:
-pio run -e esp32-hardware
+Compilar dentro do VSCode na plataforma PIO.
 
 Upload:
-pio run -e esp32-hardware -t upload
+Fazer o upload dentro do VSCode na plataforma PIO.
 
 Monitor:
-pio device monitor -e esp32-hardware
+Para verificar o monitor, também é possível ver dentro do VSCode.
