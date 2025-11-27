@@ -3,7 +3,7 @@
  * @brief Sistema IoT Casa Inteligente
  * 
  * Conecta à rede WiFi "iot" com senha "123mudar"
- * Conecta ao broker MQTT em 192.168.0.1
+ * Conecta ao broker MQTT em 192.168.137.1:1883
  * Simula sensores de luminosidade (0-10) e temperatura (-3 a 45°C)
  * Controla luzes (GPIO 18) e ar condicionado (GPIO 19) via MQTT
  */
@@ -26,7 +26,7 @@ void app_main(void)
     ESP_LOGI(TAG, "========================================");
     ESP_LOGI(TAG, "|        Sistema IoT Casa Inteligente  |");
     ESP_LOGI(TAG, "|  WiFi: iot / Senha: 123mudar         |");
-    ESP_LOGI(TAG, "|  MQTT: 192.168.0.1:1883              |");
+    ESP_LOGI(TAG, "|  MQTT: 192.168.137.1:1883            |");
     ESP_LOGI(TAG, "========================================");
     
     // Configurar callback para mensagens MQTT recebidas
